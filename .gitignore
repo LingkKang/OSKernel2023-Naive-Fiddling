@@ -1,0 +1,9 @@
+.DS_Store
+
+# object files
+*.o
+
+# binary files
+*.bin
+*.elf
+*.exe
