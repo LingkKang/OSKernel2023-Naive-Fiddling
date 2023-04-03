@@ -1,3 +1,5 @@
 build:
   script:
     - make
+  tags:
+    - shared
