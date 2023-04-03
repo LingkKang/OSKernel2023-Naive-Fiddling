@@ -6,9 +6,12 @@ GCC = ${PLATFORM}gcc
 GCC_FLAGS = -nostdlib -fno-builtin -march=rv64gcv -g -Wall
 
 QEMU = qemu-system-riscv64
-QEMU_FLAGS = -machine virt -bios default -m 128M -nographic
+QEMU_FLAGS = -machine virt -bios none -m 128M -nographic
 
 ASM_FILE = boot.s
+
+C_FILE = kernel.c \
+         uart.c
 
 OBJ_FILE = ${ASM_FILE:.s=.o}
 
