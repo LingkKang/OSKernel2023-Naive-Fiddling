@@ -13,7 +13,8 @@ QEMU_FLAGS = -machine virt -bios none -m 128M -nographic
 ASM_FILE = boot.s
 
 C_FILE = kernel.c \
-         uart.c
+         uart.c \
+		 printf.c
 
 OBJ_FILE = ${ASM_FILE:.s=.o}
 OBJ_FILE += ${C_FILE:.c=.o}
